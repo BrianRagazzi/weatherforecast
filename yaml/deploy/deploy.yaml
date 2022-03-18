@@ -16,7 +16,7 @@ spec:
         app: weatherforecast-api
     spec:
       containers:
-        - image: harbor.wesleyreisz.com/rrsc/weatherforecast-service-api:latest
+        - image: ragazzilab/weatherforecast-service-api:latest
           name: weatherforecast-api
           ports:
             - containerPort: 8080
