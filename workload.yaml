@@ -1,0 +1,14 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: weatherforecast
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: weatherforecast
+spec:
+  source:
+    git:
+      url: https://github.com/BrianRagazzi/weatherforecast
+      ref:
+        branch: main
+    subPath: src/weatherforecast-service/
