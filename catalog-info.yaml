@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: weatherforecast
+  description: Weather Forecast API
+  tags:
+    - app-accelerator
+    - c#
+    - dotnet
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=weatherforecast'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
